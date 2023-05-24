@@ -29,7 +29,7 @@ function Copyright() {
   );
 }
 
-const steps = ['Information', 'Choose Vaccine', 'Review your order'];
+const steps = ['Reservations', 'Information', 'Review your order'];
 
 function getStepContent(step) {
   switch (step) {
@@ -54,7 +54,7 @@ export default function Checkout() {
       return;
     }
 
-    fetch('https://long-pink-nightingale-boot.cyclic.app/authen', {
+    fetch('http://localhost:5000/authen', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -109,8 +109,7 @@ export default function Checkout() {
         sx={{
           position: 'relative',
           borderBottom: (t) => `1px solid ${t.palette.divider}`,
-        }}
-      >
+        }}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
             Vaccination

@@ -38,7 +38,7 @@ export default function SignIn() {
     password: event.currentTarget.password.value
   };
   console.log(data);
-  fetch('https://long-pink-nightingale-boot.cyclic.app/SignIn', {
+  fetch('https://erin-tame-puppy.cyclic.app/SignIn', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -56,8 +56,9 @@ export default function SignIn() {
     console.log(data);
     if(data.status === 'ok'){
       localStorage.setItem('token', data.token)
+      localStorage.setItem('id', data.id)
       alert('login sucess')
-      navigate('/Checkout')
+      navigate('/Reservation')
     }else{
       alert('login fail')
     }

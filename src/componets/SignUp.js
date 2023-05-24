@@ -43,7 +43,7 @@ export default function SignUp() {
       password: data.get('password'),
     };
 
-    fetch('https://long-pink-nightingale-boot.cyclic.app/SignUp', {
+    fetch('https://erin-tame-puppy.cyclic.app/SignUp', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -61,6 +61,7 @@ export default function SignUp() {
         console.log(data);
         if (data.status === 'OK') {
           alert('Register success');
+          window.location = '/SignIn';
         } else {
           alert('Register fail');
         }
