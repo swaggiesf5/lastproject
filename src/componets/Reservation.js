@@ -53,6 +53,12 @@ function Reservation() {
       });
   }, []);
 
+  const handleLogout = (event) =>{
+    event.preventDefault();
+    localStorage.removeItem('token')
+    window.location = '/SignIn'
+  }
+
   const handleFormSubmit = () => {
     const chosenHospital = document.getElementById('choose-hospital').value;
     const selectedVaccines = Array.from(document.querySelectorAll('input[name^="vaccine"]:checked')).map(
@@ -159,6 +165,7 @@ function Reservation() {
             <Button variant="contained" color="primary" onClick={handleFormSubmit}>
               Submit
             </Button>
+            <Button variant ="contained" sx={{ mt: 3, ml: 1 }}  onClick={handleLogout}>Logout</Button>
           </Paper>
         </Container>
         <Box
