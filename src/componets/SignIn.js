@@ -38,7 +38,7 @@ export default function SignIn() {
     password: event.currentTarget.password.value
   };
   console.log(data);
-  fetch('https://long-rose-skunk-ring.cyclic.app/SignIn', {
+  fetch('https://long-pink-leopard-fez.cyclic.app/SignIn', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

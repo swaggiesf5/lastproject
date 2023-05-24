@@ -22,7 +22,7 @@ function Reservation() {
       return;
     }
 
-    fetch('https://erin-tame-puppy.cyclic.app/authen', {
+    fetch('https://long-pink-leopard-fez.cyclic.app/authen', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ function Reservation() {
       vaccines: selectedVaccines,
     };
 
-    fetch(`https://long-rose-skunk-ring.cyclic.app/id/${id}`, {
+    fetch(`https://long-pink-leopard-fez.cyclic.app/id/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
