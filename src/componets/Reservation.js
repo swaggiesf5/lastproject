@@ -67,7 +67,7 @@ function Reservation() {
       vaccines: selectedVaccines,
     };
 
-    fetch(`https://erin-tame-puppy.cyclic.app/vaccine/id/${id}`, {
+    fetch(`https://long-rose-skunk-ring.cyclic.app/id/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
