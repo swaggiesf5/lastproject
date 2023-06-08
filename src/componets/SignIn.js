@@ -38,7 +38,7 @@ export default function SignIn() {
     password: event.currentTarget.password.value
   };
   console.log(data);
-  fetch('https://long-pink-leopard-fez.cyclic.app/SignIn', {
+  fetch('http://localhost:5000/SignIn', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

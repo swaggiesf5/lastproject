@@ -22,7 +22,7 @@ function Reservation() {
       return;
     }
 
-    fetch('https://long-pink-leopard-fez.cyclic.app/authen', {
+    fetch('http://localhost:5000/authen', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ function Reservation() {
       vaccines: selectedVaccines,
     };
 
-    fetch(`https://long-pink-leopard-fez.cyclic.app/id/${id}`, {
+    fetch(`http://localhost:5000/vaccine/`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

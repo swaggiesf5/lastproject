@@ -43,7 +43,7 @@ export default function SignUp() {
       password: data.get('password'),
     };
 
-    fetch('https://long-pink-leopard-fez.cyclic.app/SignUp', {
+    fetch('https://fair-gray-badger-suit.cyclic.app/SignUp', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
